@@ -1,10 +1,12 @@
 # Memory game
 
-A demo of this app can be found here:
+A demo of this app can be found here: [https://concentration-memory-game.netlify.app]
 
 ## Available Scripts
 
-In the project directory, you can run: [https://concentration-memory-game.netlify.app]
+In the project directory, you can run: 
+
+### `npm install`, to install all the packages
 
 ### `npm start`, to start the app
 
@@ -19,6 +21,12 @@ Launches the test runner in the interactive watch mode.
 
 Builds the app for production to the `build` folder. \
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+## Complete process
+
+Please run the next commands in order to run the application:
+- npm install
+- npm start
 
 ## Some packages used
 
