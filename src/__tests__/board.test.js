@@ -95,7 +95,7 @@ describe('Board Component', () => {
         await waitFor(() => {
             expect(cardOne).not.toHaveClass('front');
             expect(cardTwo).not.toHaveClass('front');
-        }, { timeout: 2000 });
+        }, { timeout: 4000 });
     });
 
   });

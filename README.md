@@ -42,7 +42,7 @@ Naming conventions using "-" instead of spaces for css classes and camelCase. \
 The use of a linter in the project(eslint). \
 Encapsulation. \
 Mantaining naming standards in the applications. \
-Testing the code written. \
+Testing the code written.
 
 ## Biggest challenge
 
@@ -51,4 +51,5 @@ Css, in the sense of the animations when selecting the card. Took most of my tim
 ## Things that can be improved if I have had more time
 
 App is created for desktop, so true responsiveness is a problem. \
-Better UI overall, like image sizing management, flashy animations and accessability.
+Better UI overall, like image sizing management, flashy animations and accessability. \
+Deeper testing for the components
