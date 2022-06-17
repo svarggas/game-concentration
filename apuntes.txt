@@ -1,0 +1,12 @@
+Cosas por hacer:
+
+- Finishes
+Figure out way to manage images dimensions
+Add eslint
+Add tests
+
+- Final stuff
+Get on netlify
+create readme
+see if everything is fine to send it
+delete and clone and try to run it
