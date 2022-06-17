@@ -28,6 +28,7 @@ const UserScore = ({ userResults, userInTurn }) => {
                         variant='top'
                         src={`https://robohash.org/${option}.png?size=200x200`}
                         className='won-card'
+                        alt={`robot-${option}`}
                       />
                     </Col>
                   ))}

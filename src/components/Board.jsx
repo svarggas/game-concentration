@@ -109,20 +109,18 @@ const Board = ({
         const showCard = userTurn.cardsSelected.some(card => card.index === i) || !boardOptions[i];
         const imageValue = getImageValue(i, optionValue, showCard);
         return (
-            <Col>
-                <div
-                    className={`card-container ${showCard ? 'flipped' : ''}`}
-                    onClick={() => handleCardClick(boardOptions[i], i)}
-                >
-                    <div className="flipper">
-                        <Image
-                            className={`img ${showCard ? 'front' : 'back'}`}
-                            src={imageValue}
-                            alt="Card"
-                        />
-                    </div>
+            <div
+                className={`card-container ${showCard ? 'flipped' : ''}`}
+                onClick={() => handleCardClick(boardOptions[i], i)}
+            >
+                <div className="flipper">
+                    <Image
+                        className={`img ${showCard ? 'front' : 'back'}`}
+                        src={imageValue}
+                        alt="Card"
+                    />
                 </div>
-            </Col>
+            </div>
         );
     };
 
@@ -134,7 +132,7 @@ const Board = ({
         for(let i = 0; i < totalOfItems; i++) {
             const optionValue = boardOptions[i] ? boardOptions[i] : null;
             const cardLayout = getCardLayout(i, optionValue);
-            cardsInRow.push(cardLayout);
+            cardsInRow.push({index: `card-${i}-${optionValue}`, cardLayout});
 
             if (cardsInRow.length === optionsPerRow) {
                 allCards.push([...cardsInRow]);
@@ -144,13 +142,15 @@ const Board = ({
             }
         }
 
-        return allCards.map((rowOptions,index)=> {
-            return (
-                <Row key={`row-card-${index}`}>
-                    { rowOptions.map(option => option) }
-                </Row>
-            )
-        });
+        return allCards.map((rowOptions, index)=> (
+            <Row key={`row-card-${index}`}>
+                { 
+                    rowOptions.map(option => 
+                        (<Col key={option.index}>{ option.cardLayout }</Col>)
+                    ) 
+                }
+            </Row>
+        ));
     };
 
     return (

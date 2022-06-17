@@ -4,7 +4,7 @@ A demo of this app can be found here:
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run: [https://concentration-memory-game.netlify.app]
 
 ### `npm start`, to start the app
 
@@ -22,31 +22,33 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Some packages used
 
-create-react-app, Bootstrap, Jest, React Testing Library, PropTypes, Eslint, Prettier
+create-react-app, Bootstrap, Jest, React Testing Library, PropTypes, Eslint, Prettier.
 
 ## Thought process that went into the application
 
 ### Project structure
 
-Knowing that is a game and it can barely scale because of the specifications of it. I used a simple structure based on functionality. Folder for components, styles and tets.
+Knowing that is a game and it can barely scale because of the specifications of it. I used a simple folder structure based on functionality per file. So, a folder for components, styles and tests. \
+For a bigger application would be better to manage each per feature/component, so folder should contain the component perse, the css and the test.
 
 ### Design desiciones
 
-The idea is having a main component(App) who manages all the logic as the father and children as stateless components with none or little logic \
-Some patterns used: Stateless components, conditional rendering, controlled components and the use of react hooks
+The idea is having a main component(App) who manages all the logic as the father and children as stateless components with none or little logic. \
+Some patterns used: Stateless components, conditional rendering, controlled components and the use of react hooks.
 
 ### Coding conventions
 
-Naming conventions using "-" instead of spaces for css classes and camelCase \
-The use of a linter in the project(eslint) \
-Encapsulation \
-Mantaining naming standards in the applications \
-Testing the code written \
+Naming conventions using "-" instead of spaces for css classes and camelCase. \
+The use of a linter in the project(eslint). \
+Encapsulation. \
+Mantaining naming standards in the applications. \
+Testing the code written. \
 
 ## Biggest challenge
 
-Css, in the sense of the animations when selecting the card. Took most of my time.
+Css, in the sense of the animations when selecting the card. Took most of my time, the game logic was pretty straight forward.
 
 ## Things that can be improved if I have had more time
 
+App is created for desktop, so true responsiveness is a problem. \
 Better UI overall, like image sizing management, flashy animations and accessability.
